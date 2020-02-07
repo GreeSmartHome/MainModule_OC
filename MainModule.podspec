@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MainModule'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MainModule.'
+  s.summary          = '主框架组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+这是一个简单的主框架组件库，随时可以拿过去用
                        DESC
 
-  s.homepage         = 'https://github.com/1049646716@qq.com/MainModule'
+  s.homepage         = 'https://gitee.com/luojiya/MainModule'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1049646716@qq.com' => '1049646716@qq.com' }
-  s.source           = { :git => 'https://github.com/1049646716@qq.com/MainModule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://gitee.com/luojiya/MainModule.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -39,4 +39,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
 end
