@@ -18,8 +18,14 @@
  */
 + (void)setGlobalBackGroundImage: (UIImage *)globalImg {
 
-    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[GRNavigationController class]]];
-    [navBar setBackgroundImage:globalImg forBarMetrics:UIBarMetricsDefault];
+    if (@available(iOS 9.0, *)) {
+        UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[GRNavigationController class]]];
+        [navBar setBackgroundImage:globalImg forBarMetrics:UIBarMetricsDefault];
+    } else {
+        // Fallback on earlier versions
+        UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:NSClassFromString(@"GRNavigationController"), nil];
+        [navBar setBackgroundImage:globalImg forBarMetrics:UIBarMetricsDefault];
+    }
 
 }
 
@@ -36,7 +42,13 @@
     if (fontSize < 6 || fontSize > 40) {
         fontSize = 16;
     }
-    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[GRNavigationController class]]];
+    UINavigationBar *navBar;
+    if (@available(iOS 9.0, *)) {
+        navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[GRNavigationController class]]];
+    } else {
+        // Fallback on earlier versions
+        navBar = [UINavigationBar appearanceWhenContainedIn:NSClassFromString(@"GRNavigationController"), nil];
+    }
     // 设置导航栏颜色
     NSDictionary *titleDic = @{
                                NSForegroundColorAttributeName: globalTextColor,
