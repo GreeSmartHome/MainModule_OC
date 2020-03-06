@@ -21,6 +21,19 @@
     [[GRTabBarController shareInstance] addChildVC:vc title:title normalColor:normalColor selectedColor:selectedColor normalImageName:normalImageName selectedImageName:selectedImageName isRequiredNavController:isRequired];
 }
 
++ (void)addChildVC:(NSArray *)param {
+    
+    UIViewController *vc = param[0];
+    NSString *title = param[1];
+    UIColor *normalColor = param[2];
+    UIColor *selectedColor = param[3];
+    NSString *normalImageName = param[4];
+    NSString *selectedImageName = param[5];
+    BOOL isRe = [param[6] boolValue];
+    
+    [self addChildVC:vc title:title normalColor:normalColor selectedColor:selectedColor normalImageName:normalImageName selectedImageName:selectedImageName isRequiredNavController:isRe];
+}
+
 /**
  *  设置全局的导航栏背景图片
  *

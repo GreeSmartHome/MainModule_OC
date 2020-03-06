@@ -1,9 +1,9 @@
 {
   "name": "MainModule",
-  "version": "0.1.0",
-  "summary": "A short description of MainModule.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/1049646716@qq.com/MainModule",
+  "version": "0.1.1",
+  "summary": "主框架组件",
+  "description": "这是一个简单的主框架组件库，随时可以拿过去用",
+  "homepage": "https://gitee.com/luojiya/MainModule",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "1049646716@qq.com": "1049646716@qq.com"
   },
   "source": {
-    "git": "https://github.com/1049646716@qq.com/MainModule.git",
-    "tag": "0.1.0"
+    "git": "https://gitee.com/luojiya/MainModule.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

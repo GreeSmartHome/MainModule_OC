@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)addChildVC: (UIViewController *)vc title:(NSString *)title normalColor:(UIColor *)normalColor selectedColor:(UIColor *)selectedColor normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName isRequiredNavController: (BOOL)isRequired;
 
++ (void)addChildVC:(NSArray *)param;
+
 /**
  *  设置全局的导航栏背景图片
  *

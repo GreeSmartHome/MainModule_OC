@@ -7,7 +7,7 @@
 //
 
 #import "GRAppDelegate.h"
-#import <MainModuleAPI.h>
+#import "GRMediatorManager+GRMainModule.h"
 
 @implementation GRAppDelegate
 
@@ -15,11 +15,11 @@
 {
     // Override point for customization after application launch.
     
-    UITabBarController *rootVC = [MainModuleAPI rootTabBarCcontroller];
-    [MainModuleAPI addChildVC:[UIViewController new] title:@"家居" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"control_tab_black_normal" selectedImageName:@"control_tab_selected" isRequiredNavController:YES];
-    [MainModuleAPI addChildVC:[UIViewController new] title:@"商城" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"mall_tab_black_normal" selectedImageName:@"mall_tab_selected" isRequiredNavController:YES];
-    [MainModuleAPI addChildVC:[UIViewController new] title:@"发现" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"find_tab_black_normal" selectedImageName:@"find_tab_selected" isRequiredNavController:YES];
-    [MainModuleAPI addChildVC:[UIViewController new] title:@"我的" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"my_tab_black_normal" selectedImageName:@"my_tab_selected" isRequiredNavController:YES];
+    UIViewController *rootVC = [GRMediatorManager rootTabBarController];
+    [GRMediatorManager addChildVC:[UIViewController new] title:@"家居" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"control_tab_black_normal" selectedImageName:@"control_tab_selected" isRequiredNavController:YES];
+    [GRMediatorManager addChildVC:[UIViewController new] title:@"商城" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"mall_tab_black_normal" selectedImageName:@"mall_tab_selected" isRequiredNavController:YES];
+    [GRMediatorManager addChildVC:[UIViewController new] title:@"发现" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"find_tab_black_normal" selectedImageName:@"find_tab_selected" isRequiredNavController:YES];
+    [GRMediatorManager addChildVC:[UIViewController new] title:@"我的" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"my_tab_black_normal" selectedImageName:@"my_tab_selected" isRequiredNavController:YES];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     
