@@ -49,6 +49,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param fontSize        全局导航栏文字大小
  */
 + (void)setNavBarGlobalTextColor: (UIColor *)globalTextColor andFontSize: (CGFloat)fontSize;
+
+
+
++ (void)setNavBarGlobalText:(NSArray *)param;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -55,4 +55,12 @@
     [GRNavBar setGlobalTextColor:globalTextColor andFontSize:fontSize];
 
 }
+
++ (void)setNavBarGlobalText:(NSArray *)param {
+    
+    UIColor *globalTextColor = param[0];
+    CGFloat fontSize = [param[1] floatValue];
+    [self setNavBarGlobalTextColor:globalTextColor andFontSize:fontSize];
+    
+}
 @end

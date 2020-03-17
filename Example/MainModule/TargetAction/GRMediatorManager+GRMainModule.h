@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 /**添加子控制器*/
 + (void)addChildVC:(UIViewController *)vc title:(NSString *)title normalColor:(UIColor *)normalColor selectedColor:(UIColor *)selectedColor normalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName isRequiredNavController:(BOOL)isRequired;
 
+/**修改导航栏文字颜色*/
++ (void)setNavBarGlobalTextColor: (UIColor *)globalTextColor andFontSize: (CGFloat)fontSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

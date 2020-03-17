@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MainModule'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '主框架组件'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MainModule/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MainModule' => ['MainModule/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'MainModule' => ['MainModule/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

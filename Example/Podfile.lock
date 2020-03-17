@@ -1,5 +1,5 @@
 PODS:
-  - MainModule (0.1.1)
+  - MainModule (0.1.3)
 
 DEPENDENCIES:
   - MainModule (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MainModule: 8b93c58ed422e497fbf7091c98ae142ae5d60a0d
+  MainModule: 72124cb02c091b0ca2561487f936772a983f90ab
 
 PODFILE CHECKSUM: 83130f778b3a9e034804522619fbdb2006b79a8a
 

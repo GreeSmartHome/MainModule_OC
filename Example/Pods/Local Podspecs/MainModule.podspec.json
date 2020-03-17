@@ -1,6 +1,6 @@
 {
   "name": "MainModule",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "summary": "主框架组件",
   "description": "这是一个简单的主框架组件库，随时可以拿过去用",
   "homepage": "https://gitee.com/luojiya/MainModule",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://gitee.com/luojiya/MainModule.git",
-    "tag": "0.1.1"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MainModule/Classes/**/*"
+  "source_files": "MainModule/Classes/**/*",
+  "resource_bundles": {
+    "MainModule": [
+      "MainModule/Assets/*.png"
+    ]
+  }
 }

@@ -8,6 +8,8 @@
 
 #import "GRAppDelegate.h"
 #import "GRMediatorManager+GRMainModule.h"
+#import "GRTestController.h"
+#import <MainModuleAPI.h>
 
 @implementation GRAppDelegate
 
@@ -16,10 +18,12 @@
     // Override point for customization after application launch.
     
     UIViewController *rootVC = [GRMediatorManager rootTabBarController];
-    [GRMediatorManager addChildVC:[UIViewController new] title:@"家居" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"control_tab_black_normal" selectedImageName:@"control_tab_selected" isRequiredNavController:YES];
+    [GRMediatorManager addChildVC:[GRTestController new] title:@"家居" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"control_tab_black_normal" selectedImageName:@"control_tab_selected" isRequiredNavController:YES];
     [GRMediatorManager addChildVC:[UIViewController new] title:@"商城" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"mall_tab_black_normal" selectedImageName:@"mall_tab_selected" isRequiredNavController:YES];
     [GRMediatorManager addChildVC:[UIViewController new] title:@"发现" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"find_tab_black_normal" selectedImageName:@"find_tab_selected" isRequiredNavController:YES];
     [GRMediatorManager addChildVC:[UIViewController new] title:@"我的" normalColor:[UIColor blackColor] selectedColor:[UIColor redColor] normalImageName:@"my_tab_black_normal" selectedImageName:@"my_tab_selected" isRequiredNavController:YES];
+    //设置全局导航栏颜色
+    [GRMediatorManager setNavBarGlobalTextColor:[UIColor blueColor] andFontSize:18];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     

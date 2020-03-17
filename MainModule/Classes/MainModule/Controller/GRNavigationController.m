@@ -52,8 +52,12 @@
     // 过滤第一个根控制器
     if (self.childViewControllers.count > 0) {
         
+        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+        NSString *bundleImagePath = [[currentBundle infoDictionary][@"CFBundleName"] stringByAppendingString:@".bundle"];
+        NSString *imagePath = [currentBundle pathForResource:@"btn_back_n@3x.png" ofType:nil inDirectory:bundleImagePath];
+        UIImage *image = [[UIImage imageWithContentsOfFile:imagePath] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         //统一设置返回按钮
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_back_n"] style:0 target:self action:@selector(back)];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:0 target:self action:@selector(back)];
         //非根控制器隐藏TabBar
         viewController.hidesBottomBarWhenPushed = YES;
     }

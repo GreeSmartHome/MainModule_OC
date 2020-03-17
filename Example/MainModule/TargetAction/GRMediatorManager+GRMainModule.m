@@ -27,5 +27,9 @@
     
 }
 
-
++ (void)setNavBarGlobalTextColor: (UIColor *)globalTextColor andFontSize: (CGFloat)fontSize {
+    
+    NSArray*param = @[globalTextColor,@(fontSize)];
+    [self performTarget:@"MainModuleAPI" action:@"setNavBarGlobalText:" params:param isRequiredReturnValue:NO];
+}
 @end
