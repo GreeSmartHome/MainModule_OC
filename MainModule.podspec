@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MainModule'
-  s.version          = '0.1.4'
+  s.version          = '1.0.0'
   s.summary          = '主框架组件'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 这是一个简单的主框架组件库，随时可以拿过去用
                        DESC
 
-  s.homepage         = 'https://gitee.com/luojiya/MainModule'
+  s.homepage         = 'https://github.com/GreeSmartHome/MainModule_OC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1049646716@qq.com' => '1049646716@qq.com' }
-  s.source           = { :git => 'https://gitee.com/luojiya/MainModule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/GreeSmartHome/MainModule_OC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
